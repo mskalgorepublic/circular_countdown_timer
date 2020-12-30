@@ -119,7 +119,7 @@ class CircularCountDownTimerState extends State<CircularCountDownTimer>
     }
     // For mm:ss format
     else {
-      return '${duration.inMinutes % 60}:${(duration.inSeconds % 60).toString().padLeft(2, '0')}';
+      return '${(duration.inSeconds % 60).toString().padLeft(2, '0')}';
     }
   }
 
