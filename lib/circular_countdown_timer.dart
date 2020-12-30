@@ -84,7 +84,7 @@ class CircularCountDownTimerState extends State<CircularCountDownTimer>
 
   String get time {
     if (widget.isReverse && _controller.isDismissed) {
-      return '0:00';
+      return '0';
     } else {
       Duration duration = _controller.duration * _controller.value;
       return _getTime(duration);
